@@ -10,7 +10,7 @@ Web Application Security Project Sem 2 2019/2020
 </ul>
 
 ## Project Title
-Smart Tutor, Learning Become Easy
+Smart Tutor, Learning Made Easy
 
 ## Introduction
 This Web Application was develop for WebTech project as a cloud-based tutorial platform focusing on the knowledge of Information and Communication Technology. This platform for online learning allow the user can access to several learning materials mainly videos provided by the tutors. The project targeted to become the one stop center for user to learn. It has two type of package currently which are package for Adult (Intermediate to Advance) and package for Kids (Beginner to Intermediate).
@@ -21,7 +21,8 @@ During the early process of the system, there are several vulnerabilities to the
   <li>No Input Validation. User can either fill the details or not.</li>
   <li>No Authentication. The system can be hacked by anyone.</li>
   <li>No Authorization. The user can access the whole system without limitation</li>
-    
+</ul>
+
 ## Web Application Security Enhancement
 Security features implemented within the project include:
 <ul>
