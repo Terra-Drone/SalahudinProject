@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/header&footer.css">
+    <link rel="stylesheet" href="CSS/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <title>Frequently Asked Questions - FAQ</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Smart Tutor</h1>
+      <p>
+        Learning Become Easy!
+      </p>
+    </header>
+
+    <nav>
+        <div class="navbar">
+          <a href="Main.html">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Welcome
+
+            </button>
+            <div class="dropdown-content">
+              <a href="SignUp.html">Sign Up</a>
+              <a href="#signin">Sign In</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Package
+
+            </button>
+            <div class="dropdown-content">
+              <a href="services.html">Kids</a>
+              <a href="services.html">Adult</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+
+            </button>
+            <div class="dropdown-content">
+              <a href="FAQ.html">FAQ</a>
+              <a href="Forum.html">Forum</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Others
+
+            </button>
+            <div class="dropdown-content">
+              <a href="AboutUs.html">About Us</a>
+              <a href="ContactUs.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+
+    <h1>Frequently Asked Questions</h1>
+
+    <a id="submission">
+      <div class="ddfaq">
+        <button class="ddfaqbtn" onclick="myFunction('q1')">How can we start learning?
+
+        </button>
+          <div id="q1" class="content">
+            Your can register and enjoy this website.
+          </div>
+      </div>
+    </a>
+
+    <a id="submission">
+      <div class="ddfaq">
+        <button class="ddfaqbtn" onclick="myFunction('q2')">What is the qualification of the tutor?
+
+        </button>
+          <div id="q2" class="content">
+            Our tutor having intermidiate to advance level of the area they involved in.
+          </div>
+      </div>
+    </a>
+
+    <footer style="margin-top:10%;">
+      <div class="sochmedia">
+        <p>Follow Us</p> <br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <p1 align="left">Smart Tutor SDN BHD</p1>
+    </footer>
+
+  </body>
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+
+    function myFunction(id) {
+        var dropdowns = document.getElementsByClassName("content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                                openDropdown.classList.remove('show');
+                }
+        document.getElementById(id).classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks in window.
+    window.onclick = function(event) {
+            if (!event.target.matches('.ddfaqbtn')) {
+                    var dropdowns = document.getElementsByClassName("content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                            }
+                    }
+            }
+    }
+  </script>
+</html>

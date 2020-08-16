@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/header&footer.css">
+    <link rel="stylesheet" href="CSS/startforum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <title>Start A Forum</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Smart Tutor</h1>
+      <p>
+        Learning Become Easy!
+      </p>
+    </header>
+
+    <nav>
+        <div class="navbar">
+          <a href="Main.html">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Welcome
+
+            </button>
+            <div class="dropdown-content">
+              <a href="SignUp.html">Sign Up</a>
+              <a href="#signin">Sign In</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Package
+
+            </button>
+            <div class="dropdown-content">
+              <a href="services.html">Kids</a>
+              <a href="services.html">Adult</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+
+            </button>
+            <div class="dropdown-content">
+              <a href="FAQ.html">FAQ</a>
+              <a href="Forum.html">Forum</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Others
+
+            </button>
+            <div class="dropdown-content">
+              <a href="AboutUs.html">About Us</a>
+              <a href="ContactUs.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+    <div class="left">
+      This Is Left
+    </div>
+
+    <div class="right">
+      This Is Right
+    </div>
+
+    <form action="action_page.php" style="border:1px solid #ccc" id="sub">
+      <div class="container">
+        <h1>Start A Forum</h1>
+        <p>Please fill in the details of the forum you want to start.</p>
+        <hr>
+
+        <label for="forumName"><b>Forum Name</b></label><br>
+        <input type="text" placeholder="Enter Forum Name" name="forumName" required><br>
+
+        <label for="description"><b>Description</b></label><br>
+        <input type="text" placeholder="Enter Forum Description" name="description" required><br>
+
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw"  id="password" required><br>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label><br>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="reppassword" onkeyup="checkPass(); return false;" required><br>
+
+        </div>
+          <div class="registrationFormAlert" id="divCheckPasswordMatch">
+        </div>
+
+        <input type="checkbox" onclick="myFunction()">Show Password<br>
+
+        <p>By creating a forum you agree to our <a href="#" style="color:dodgerblue">Rules & Regulations</a>.</p>
+
+        <div class="clearfix" id="sub">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="startbtn" onclick="window.location.href='CustomForum.html'">Start A Forum</button>
+        </div>
+      </div>
+    </form>
+
+    <footer>
+      <div class="sochmedia">
+        <p>Follow Us</p> <br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <p1 align="left">Smart Tutor SDN BHD</p1>
+    </footer>
+
+  </body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+          x.type = "text";
+      } else {
+          x.type = "password";
+      }
+
+      var y = document.getElementById("reppassword");
+      if (y.type === "password") {
+          y.type = "text";
+      } else {
+          y.type = "password";
+      }
+    }
+
+    function checkPass()
+    {
+        //Store the password field objects into variables ...
+        var pass1 = document.getElementById('password');
+        var pass2 = document.getElementById('reppassword');
+        //Store the Confimation Message Object ...
+        var message = document.getElementById('confirmMessage');
+        //Set the colors we will be using ...
+        var goodColor = "#66cc66";
+        var badColor = "#ff6666";
+        //Compare the values in the password field
+        //and the confirmation field
+        if(pass1.value == pass2.value){
+            //The passwords match.
+            //Set the color to the good color and inform
+            //the user that they have entered the correct password
+            pass2.style.backgroundColor = goodColor;
+            message.style.color = goodColor;
+            message.innerHTML = "Passwords Match!"
+        }else{
+            //The passwords do not match.
+            //Set the color to the bad color and
+            //notify the user.
+            pass2.style.backgroundColor = badColor;
+            message.style.color = badColor;
+            message.innerHTML = "Passwords Do Not Match!"
+        }
+    }
+
+  </script>
+
+</html>
