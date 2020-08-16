@@ -10,10 +10,10 @@ Web Application Security Project Sem 2 2019/2020
 </ul>
 
 ## Project Title
-User Management System
+Smart Tutor, Learning Become Easy
 
 ## Introduction
-The User Management System
+
 
 ## Web Application Security Enhancement
 Security features implemented within the project include:
