@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/header&footer.css">
+    <link rel="stylesheet" href="CSS/contactus.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+
+    <title>Smart Tutor - Contact Us</title>
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/61008C46-7913-AA44-9743-4A310F58292C/main.js" charset="UTF-8"></script></head>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Smart Tutor</h1>
+      <p>
+        Learning Become Easy!
+      </p>
+    </header>
+
+    <nav>
+     <div class="navbar">
+        <a href="Main.html">Home</a>
+          <div class="dropdown">
+          <button class="dropbtn">Welcome
+
+          </button>
+          <div class="dropdown-content">
+            <a href="SignUp.html">Sign Up</a>
+            <a href="#signin">Sign In</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Package
+
+            </button>
+          <div class="dropdown-content">
+            <a href="services.html">Kids</a>
+            <a href="services.html">Adult</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Services
+
+          </button>
+          <div class="dropdown-content">
+            <a href="FAQ.html">FAQ</a>
+            <a href="Forum.html">Forum</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Others
+
+          </button>
+          <div class="dropdown-content">
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">WHERE WE WORK</h3>
+    <center>  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.384278533385!2d101.72720971477234!3d3.2543284976307207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38c2f70795af%3A0xf808897bf1163a3!2sIIUM+ACADEMY+OF+GRADUATE+%26+PROFESSIONAL+STUDIES!5e0!3m2!1sen!2smy!4v1526797163765" width="1040" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+
+      <p class="w3-center"><em>We would love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <br>
+        <div class="w3-col m8 w3-panel">
+
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></br>
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="sochmedia">
+        <p>Follow Us</p> <br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <p1 align="left">Smart Tutor SDN BHD</p1>
+    </footer>
+
+  </body>
+  <script>
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+</html>
