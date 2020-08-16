@@ -21,7 +21,8 @@ During the early process of the system, there are several vulnerabilities to the
   <li>No Input Validation. User can either fill the details or not.</li>
   <li>No Authentication. The system can be hacked by anyone.</li>
   <li>No Authorization. The user can access the whole system without limitation</li>
-    
+</ul>
+
 ## Web Application Security Enhancement
 Security features implemented within the project include:
 <ul>
