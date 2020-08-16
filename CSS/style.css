@@ -1,0 +1,161 @@
+body{
+  font-family: Ubuntu;
+}
+.container{
+  display: inline-block;
+  margin-top: 0;
+}
+
+.instructions{
+  font-family: sans-serif;
+  display: inline-block;
+  overflow:auto;
+  overflow-x: hidden;
+  margin: 15px;
+  width: 400px;
+  height:100%;
+}
+.edit{
+  float: right;
+  position: relative;
+  top:5;
+  right:5vw;
+  display: inline-block;
+  margin: 2px;
+ }
+ .preview{
+   padding: 13px;
+  display: inline-block;
+  background-color:  white;
+  color:  #007c72;
+  font-size: 28px;
+  font-weight: 700;
+  position: absolute;
+  /* top:1; */
+  left:66%;
+  width: 540px;
+  height: 650px;
+ }
+.chapter-name{
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.task-discription{
+  font-size: 18px;
+  padding: 5px;
+}
+xmp{
+  border-radius: 5px;
+  display:inline-block;
+  color: #64a1fc;
+  background-color: #ddf7ff;
+  font-size: 18px;
+}
+li{
+  font-size: 18px;
+}
+.options{
+}
+.options *{
+  margin: 3px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+}
+
+/* the model or the pop up styles */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Footer */
+.modal-header{
+  border-bottom: none;
+}
+.modal-body{
+  font-size: 48px;
+  font-weight: lighter;
+}
+.modal-footer {
+  border-top: none;
+    padding: 2px 16px;
+    background-color: #007c72;
+    color: white;
+    text-align: right;
+}
+.next{
+  background-color: #007c72; /* Green */
+  border:none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.next:hover{
+  background-color: #11a095;
+}
+
+
+/* Modal Content */
+.modal-content {
+    index:5;
+    color: white;
+    text-align: center;
+    font-weight:600;
+    font-size: 50px;
+    font-family: sans-serif;
+    position: relative;
+    background-color: #007c72;
+    margin: auto;
+    padding: 15px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border: 2px solid white;
+    top: 150px;
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top:150px; opacity: 1}
+}
