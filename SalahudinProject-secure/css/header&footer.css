@@ -1,0 +1,73 @@
+header {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  margin: 0;
+  clear: both;
+  height: 115px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: #333;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 0.3;
+  color: white;
+}
+
+.sochmedia {
+  text-align:center;
+}
+
+p {
+  font-family: 'Hind', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  background: grey;
+}
+
+.fa:hover {
+  opacity:` 0.7`;
+}
+
+p1 {
+  font-size: 17px;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  text-align:left;
+}
+
+.left {
+  float: left;
+  width: 15%;
+  border: 1px solid black;
+  margin-top: 10px;
+	margin-bottom: 10px;
+  height: 50em;
+}
+
+.right {
+  float: right;
+  width: 15%;
+  border: 1px solid black;
+  margin-top: 10px;
+	argin-bottom: 10px;
+  height: 50em;
+}

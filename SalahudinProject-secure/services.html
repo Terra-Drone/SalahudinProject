@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/header&footer.css">
+    <link rel="stylesheet" href="theme/abcdef.css">
+    <script src="lib/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script type="text/javascript" src="mode/xml/xml.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="data.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <h1 style="cursor:pointer;"><a href="main.html" >Smart Tutor</a></h1>
+      <p>
+        Learning Become Easy!
+      </p>
+    </header>
+
+    <nav>
+        <div class="navbar">
+          <a href="Main.html">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Welcome
+
+            </button>
+            <div class="dropdown-content">
+              <a href="SignUp.html">Sign Up</a>
+              <a href="#signin">Sign In</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Package
+
+            </button>
+            <div class="dropdown-content">
+              <a class="child" href="services.html">Kids</a>
+              <a class="normal" href="services.html">Adult</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+
+            </button>
+            <div class="dropdown-content">
+              <a href="FAQ.html">FAQ</a>
+              <a href="Forum.html">Forum</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Others
+
+            </button>
+            <div class="dropdown-content">
+              <a href="AboutUs.html">About Us</a>
+              <a href="ContactUs.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+      <div class="container">
+        <div class="instructions" style="background-color:white;height:650px;padding:10px;">
+          <div class="chapter-name"></div>
+          <div class="task-discription">
+          </div>
+          <div class="tasks">
+            <h4>To-Do: </h4>
+            <ul>
+
+            </ul>
+          </div>
+            <button type="button" id="submit" class="btn btn-outline-success btn-lg btn-block">Test Your Answer</button>
+            <button type="button" id="reset" class="btn btn-outline-success btn-lg btn-block">Reset</button>
+            <button type="button" id="hint" class="btn btn-outline-success btn-lg btn-block">Want a Hint?</button>
+          </div>
+
+        <div class="edit">
+        <textarea  class="editor" ></textarea>
+        </div>
+
+        <div class="preview"><h2><center>GET ON <i>coding</i>👨‍💻👨‍💻</center></h2></div>
+      </div>
+      <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" name="button" class="next">NEXT</button>
+        </div>
+      </div>
+    </div>
+
+      <script type="text/javascript" src="script.js"></script>
+
+    <footer>
+      <div class="sochmedia">
+        <p>Follow Us</p> <br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <p1 align="left">Smart Tutor SDN BHD</p1>
+    </footer>
+
+  </body>
+</html>

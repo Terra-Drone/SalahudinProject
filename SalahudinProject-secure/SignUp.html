@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+      <form action="response.html" method="get">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="signup.css">
+      </head>
+
+  <body>
+    <div id="header">
+      <p style="font-size:65px">SMART TUTOR</p>
+      <p style="color:white; font-family: 'Kaushan Script', cursive;"> Learning Becomes Easy! Sign Up Now for free. </p>
+    </div>
+
+    <nav>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Home
+        </button>
+      </div>
+       <div class="dropdown">
+        <button class="dropbtn">Welcome
+        </button>
+        <div class="dropdown-content">
+          <a href="">Sign Up</a>
+          <a href="#about">Sign In</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Package
+        </button>
+        <div class="dropdown-content">
+          <a href="#signup"> Kids </a>
+          <a href="#signin"> Adult </a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Services
+        </button>
+        <div class="dropdown-content">
+          <a href="#pack1"> FAQ</a>
+          <a href="#pack2"> Forum</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn">Others
+        </button>
+        <div class="dropdown-content">
+          <a href="#faq">About Us</a>
+          <a href="#create">Contact</a>
+        </div>
+        </div>
+      </nav>
+
+     <br><br>
+      <span style="font-size:30px;cursor:pointer; color: white" onclick="openNav()">&#9776; </span>
+      <p style="font-size:12px; color: white"> CLICK ABOVE</p>
+
+    <br><br>
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <li><a href="https://accounts.google.com/ServiceLogin">Google Mail</a></li>
+     <li><a href="https://www.google.com/drive/">Google Drive</a></li>
+     <li><a href="https://facebook.com/">Facebook</a></li>
+     <li><a href="https://twitter.com/login?lang=en">Twitter</a></li>
+     <li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+     <li> <a href="https://login.yahoo.com/config/login_verify2?.intl=us">Yahoo</a></li>
+   </div>
+
+    <span class="a">
+   <div id="question" style="background-color: black">
+
+  <h2 style="color: #ffff66" >WHY NEED AN ACCOUNT?</h2>
+  <br>
+  <p> Smart Tutor is a learning site that helps you to understand,</p>
+  <p> practice and improve your knowledge on HTML, CSS, JavaScript</p>
+  <p> languages and JqueryUI. This site provides you with tutorials,</p>
+  <p> examples,quizzes and assessment. Having an account helps you to</p>
+  <p> revise previous practices, do online tests,check your</p>
+  <p> grades & share knowledge with other users.</p>
+  <br><br>
+
+  <h2   style="color: #ffff66" > GET STARTED </h2>
+  <br>
+  <p> It is important for you to give your email address so that</p>
+  <p> we can notify you and help you when you forget your password.</p>
+  <p> You can also connect Smart Tutor site with your social </p>
+  <p> networks and spread some knowledge from what you have learnt.</p>
+  <p> If you have problem logging in to your account soon, you can</p>
+  <p> enter the website using your google mail account.</p>
+  <p> We hope this site helps you a lot in improving your learning </p>
+  <p> process on programming languages and benefits you in the </p>
+  <p> real-world situation. </p>
+      </span>
+   <br>
+</div>
+<form action="" id="form" method="post">
+<span class="a">
+<div id="register">
+  <p> FILL IN YOUR INFORMATION TO SIGN UP. </p>
+<br>
+<br>
+<div>
+<label for="name"><b>Name</b></label>
+<input type="text" placeholder="Enter Name" name="name" required autofocus>
+<br>
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" required autofocus>
+ <br>
+     <label for="pass"><b>Password</b></label>
+     <input type="password" class="form-control" placeholder="Enter Password" name="pass" id="pass" required autofocus>
+      <br>
+   <label for="confpass"><b>Confirm Password</b></label>
+     <input type="password" class="form-control" placeholder="Re-enter Password" name="confpass" id="confpass" required autofocus>
+       <br>
+       <span class="error" style="color:red"></span><br>
+       <input type="checkbox" onclick="myFunction()">Show Password<br>
+
+       <label>
+         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+       </label>
+
+       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+       <br><br>
+
+       <div class="clearfix">
+         <button type="submit" class="signupbtn" >Sign Up</button>
+         <button type="button" class="cancelbtn" >Cancel</button>
+       </span>
+       </div>
+     </div>
+     </span>
+   </form>
+   <script>
+       var allowsubmit = false;
+       $(function(){
+         //on keypress
+         $('#confpass').keyup(function(e){
+           //get values
+           var pass = $('#pass').val();
+           var confpass = $(this).val();
+
+           //check the strings
+           if(pass == confpass){
+             //if both are same remove the error and allow to submit
+             $('.error').text('');
+             allowsubmit = true;
+           }else{
+             //if not matching show error and not allow to submit
+             $('.error').text('Password not matching');
+             allowsubmit = false;
+           }
+         });
+
+         //jquery form submit
+         $('#form').submit(function(){
+
+           var pass = $('#pass').val();
+           var confpass = $('#confpass').val();
+
+           //just to make sure once again during submit
+           //if both are true then only allow submit
+           if(pass == confpass){
+             allowsubmit = true;
+           }
+           if(allowsubmit){
+             return true;
+           }else{
+             return false;
+           }
+         });
+       });
+     </script>
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<script>
+function myFunction() {
+var x = document.getElementById("pass" , "confpass");
+if (x.type === "password") {
+   x.type = "text";
+} else {
+   x.type = "password";
+}
+}
+</script>
+        </html>
+        </body>

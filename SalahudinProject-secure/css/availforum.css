@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+.ddaf {
+  background-color: #f44336;
+  color: white;
+  padding: 20px 30px;
+  margin-top: 10px;
+  margin-left: 18%;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+  outline: none;
+  color: white;
+  font-family: monospace; /* Important for vertical align on mobile phones */
+  font-size: 1.5em;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.content:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.show {
+  display: block;
+}
+
+#submission {
+  text-align: center;
+}
+
+#myDropdown{
+  text-align: center;
+}
+
+.join{
+  text-align: center;
+  align-items: center;
+}

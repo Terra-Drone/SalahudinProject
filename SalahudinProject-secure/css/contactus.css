@@ -1,0 +1,29 @@
+h2,h3,h4,h5,h6{
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+iframe{
+  align-items: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+form{
+  text-align: center;
+}
