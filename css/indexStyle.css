@@ -1,0 +1,96 @@
+form {
+	padding: 10px;
+}
+
+.addon-diff-color {
+	background-color: #33BEFF;
+	color: white;
+}
+
+.panel {
+	border: 0;
+	padding: 15px;
+}
+
+.panel-title {
+	color: #33BEFF;
+	font-weight: bolder;
+	font-size: 20;
+}
+
+/*hides pages */
+.sign-up, .forgot-pass{
+	display: none;
+}
+
+.alert, #loader {
+	display: none;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+main {
+  position: relative;
+  display: flex;
+}
+
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-color: #111;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+}
+
+.sidenav a:hover {
+ color: blue;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(http://s1.1zoom.me/big0/159/Coffee_Laptops_Hands_Table_533543_1280x853.jpg);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+.subtext{
+	border-top: 1px solid#888; padding-top:15px; font-size:80%;
+}
